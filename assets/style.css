@@ -1,0 +1,739 @@
+/* abertura  */
+
+
+#paginaMarca {
+    position: relative;
+    padding: 0;
+    height: 100vh;
+    background-image: url(./imagens/estrelas.jpeg);
+}
+
+#paginaAbertura {
+    position: absolute;
+    overflow: hidden;
+    width: 260px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#abertura {
+    width: 260px;
+    margin-top: -55px;
+    height: 367px;
+}
+
+#abertura1 {
+    margin-left: 98px;
+    margin-top: -93px;
+    line-height: 0;
+}
+
+#abertura, #abertura1 {
+    font-family: 'Dynalight', cursive;
+    display: block;
+    font-size: 300px;
+    background: repeating-linear-gradient(-45deg, rgb(249, 102, 102) 0%, rgb(245, 245, 110) 7.14%, rgb(168, 252, 168) 14.28%,
+    rgb(144, 225, 225) 21.4%, rgb(7, 143, 184) 28.56%, rgb(8, 8, 222) 35.7%, rgb(225, 146, 225) 42.84%, rgb(240, 87, 87) 50%); 
+    background-size: 100vw 100vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 10s linear infinite forwards; 
+    
+}
+
+@keyframes slide {
+    0%{
+    background-position-x: 0%;
+    }
+    100%{
+    background-position-x: 600vw;
+    }
+}
+
+
+/* fim de abertura */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+*, a {
+    margin: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(./imagens/estrelaescuro.jpeg);
+    background-size: cover;
+    color: white;
+    padding-top: 10px;
+    font-family: 'Alice', serif;
+    
+}
+
+#conteudoOpcional {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#infoIniciais {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    padding: 14px 0 9px 0;
+    background-image: linear-gradient(to bottom, rgba(3, 15, 81, 0.97), rgba(0, 0, 0, 0.96), rgb(0, 0, 0));
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+#listaInicial {
+    flex: max-content;
+    align-self: center;
+    text-align: right;
+}
+
+#marca {
+    width: 250px;
+}
+
+#marca img {
+    width: 250px;
+}
+
+#lista {
+    list-style-type: none;
+    align-items: baseline;
+}
+
+#lista li {
+    margin-left: 40px;
+    display: inline-block;
+}
+
+.inicio {
+    display: inline-block;
+    
+    
+}
+
+.inicio:hover  {
+    height: 25.5px;
+    transition: 1s ease-out;
+    font-size: 20px;
+}
+
+a {
+   color: white;
+   text-decoration: none;
+}
+
+#botaoContatos {
+    background-color: transparent;
+    border: 2px solid #00d9ff;
+    color: white;
+    padding: 10px 19px;
+    border-radius: 18px;
+    width: 102px;
+    height: 36px;
+    transition: width 1s, height 1s;
+    background: none;
+    font-weight: bold;
+    border-right-color: #00ff04;
+    border-bottom-color: #00ff04;
+    border-left-color: #00f3ff;
+    border-top-color: #00f3ff;
+    box-shadow: inset 0 0 3em #00f3ff, 0 0 0 #01ffe7;
+}
+    
+    
+
+#botaoContatos:hover {
+    width: 115px;
+    height: 40px;
+    box-shadow: inset 0 0 3em #00f3ff, 0 0 3em #04e2f9;
+}
+
+/* cargo */
+#fundoAdicional  {
+    display: none;
+}
+
+
+#cargo {
+    padding: 15% 0 20% 0;
+    width: 100vw;
+    display: flex;
+ /* background-image: url(./imagens/saturno.jpeg);
+    background-image: url(./imagens/saturno1.jpeg);
+    background-image: url(./imagens/saturno2.jpeg);
+    background-image: url(./imagens/saturno3.jpeg);
+    background-image: url(./imagens/saturno4.jpeg);
+    background-image: url(./imagens/saturno5.jpeg); */
+    /* background-image: url(./imagens/saturno9.jpeg);
+    background-image: url(./imagens/saturno7.jpeg); */
+    background-image: url(./imagens/saturnonovo.png);
+    background-size: cover;
+   
+}
+
+
+
+
+#apresentacao {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+   
+    
+}
+
+#botoes {
+    display: flex;
+}
+
+
+#apresentacaoNome {
+    font-size: 53px;
+    padding-bottom: 10px;
+    user-select: none;
+    color: white;
+    width: 580px;
+}
+
+#apresentacao p {
+    font-size: 20px;
+    color: #04d1fffe;
+    padding-bottom: 25px;
+}
+
+#botaoProjetos,#botaoContatos2 {
+    padding: 12px 28px;
+    font-size: 20px;
+    background-color: transparent; 
+    border-radius: 25px;
+    color: white; 
+    width: 165px;
+    height: 51px;
+
+  
+}
+
+#botaoContatos2 {
+    border: 2px solid #00fe08;
+    
+}
+
+#botaoProjetos {
+    border: 2px solid #f00;
+    margin-right: 30px;
+}
+
+#botaoProjetos:hover, #botaoContatos2:hover {
+    color: white;
+    width: 175px;
+    height: 56px;
+    transition: width 1s, height 1s;
+    
+}
+
+
+#botaoProjetos:hover {
+    background-color: #db0404;
+    box-shadow: 1px 1px 10px 5px #ff0303;
+
+}
+
+#botaoContatos2:hover {
+    background-color: #02c908;
+    box-shadow: 1px 1px 10px 5px #02c908;
+}
+
+#perfil img {
+    width: 330px;
+}
+
+
+/*sobre mim */
+
+
+.conteudo {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#conteudoDividido {
+    display: flex;
+    gap: 17rem;
+}
+
+#sobreMim {
+    position: relative; 
+    width: 100%;
+    background-image: url(./imagens/galaxy-night-landscape\ -\ cópia.png);
+    background-size: cover;
+    padding: 40px 0;
+}
+
+#infoSobreMim {
+    width: 263px;
+    
+    
+}
+
+.conteudoAdicional h2 {
+	padding: 0 0 60px 0;
+    text-align: center;
+}
+
+#infoSobreMim p {
+    text-align: justify;
+    line-height: 30px;
+}
+
+/* habilidades */
+
+
+.imagemChaves {
+    text-align: center;
+}
+
+#tecnologias {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.chaves {
+    height: 202px;
+    width: 139px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#habilidades {
+    display: block;
+    padding: 8% 0 3% 0;
+    /* background-color: #c84a4a;
+    background-color: #9fec99d1; */
+
+ 
+}
+
+.linguagens {
+    width: 100px;
+    padding: 0 5px;
+    transition: 0.5s all;
+}
+.linguagens:hover {
+    transform: scale(1.3) !important;
+    
+}
+
+/* Projetos */
+
+#fundo {
+    background-image: url(./imagens/backgroundatualizado.png);
+    background-size: cover;
+}
+
+#projetos {
+    padding: 7% 0;
+}
+
+#projetos ul {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    padding-left: 0;
+}
+
+#projetos li {
+    list-style-type: none;
+    padding-top: 40px;
+    width: 47.5%;
+}
+
+.projetosRealizados {
+    height: 490px;
+    background-color: rgba(254, 255, 255, 0.24);
+    border-radius: 30px;
+    position: relative;
+    transition: width 2s, height 2s, transform 2s;
+
+
+}
+
+.projetosRealizados:hover {
+    height: 490px;
+    transform: rotate(360deg);
+    box-shadow: inset 0 0 3em #00f3ff, 0 0 3em #04e2f9;
+
+
+}
+.descricao {
+    display: flex;
+    flex-direction: column; 
+}
+
+.descricao p {
+    padding-bottom: 60px;
+} 
+
+.descricaoDoProjeto {
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    height: 34px;
+    
+}
+
+.linguagensProjetos {
+    width: 42px;
+}
+
+
+.botaoProjeto {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 24px;
+    background: linear-gradient(95.16deg, #ff0000f2 3.76%, #00bcf5 83.3%);
+    background: linear-gradient(95.16deg, #680202 3.76%, #0800f5 83.3%);
+    background: linear-gradient(95.16deg, #180268 3.76%, #0800f5 83.3%);
+    background: linear-gradient(95.16deg, #ff0101 3.76%, #0918ff 83.3%);
+    background: linear-gradient(95.16deg, #ff0101 3.76%, #01076f 83.3%);
+    background: linear-gradient(95.16deg, #0c0568 3.76%, #ff0f0f 83.3%);
+    background-image: url(./imagens/estrelasbrilhando1.gif);
+    background-image: url(./imagens/ceuestrela.gif);
+    background-image: url(./imagens/estrelasbrilhando.gif);
+    background-size: cover;
+    color: white;
+    border-radius: 40px;
+    margin-top: 10px;
+    border: 0;
+    cursor: pointer;
+
+
+}
+
+.nomeDoProjeto {
+    text-align: center;
+    margin: 15px 0 10px 0;
+}
+
+.tecnologiasdoProjeto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    
+}
+
+/* contatos  */
+
+
+/* #fundoContato {
+    background-image: url(./imagens/buraconegro.png);
+    background-size: cover;
+} */
+
+#contato {
+    position: relative;
+    padding: 80px 0;
+}
+
+#contato ul {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 0px 100px;
+}
+
+#contato li {
+    list-style-type: none;
+    width: 350px;
+    margin-top: 40px;
+}
+
+#contato li a {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+
+}
+
+#contato h2 {
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+}
+
+#contato p {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.redes {
+    width: 60px;
+}
+
+#conteudoBlur {
+    background: linear-gradient(269.49deg, rgba(11, 10, 10, 0.54) 100%, rgba(11, 10, 10, 0.54) 100%);
+    border: 1px solid rgb(2, 32, 149);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+footer {
+    /* background-image: url(./imagens/estrela2.jpg); */
+    border: 0px;
+    padding: 20px;
+    /* background-size: cover; */
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.conteudoAdicional {
+    width: 100%;
+}
+
+
+
+/* animacao */
+
+#apresentacaoNome::after {
+content: '|';
+opacity: 1;
+margin-left: 5px;
+display: inline-block;
+animation: blink .7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@media (max-width:768px) {
+
+    #infoIniciais {
+        padding: 5px 0 5px 0;
+    }
+
+    #marca { 
+        width: 100vw;
+        padding: 10px 0 0 0;
+    }
+
+    #marca img {
+        width: 200px;
+    }
+
+
+    .fundoAdicional  {
+        display: block;
+        padding: 26% 0;
+        background-image: url(./imagens/galaxianova.png);
+        background-size: cover;
+    }
+
+    #conteudoOpcional {
+        width: 100%;
+        max-width: 400px;
+        margin: 0;
+        display: inline-block;
+        
+    }
+
+    .conteudo {
+        max-width: 400px;
+        
+        
+    }
+
+    #lista {
+        padding: 0;
+    
+    }
+
+    #lista li {
+        margin-left: 8px;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    #botaoContatos:hover {
+        width: 76px;
+        height: 32px;
+        box-shadow: inset 0 0 3em #00f3ff, 0 0 3em #04e2f9;
+    }
+
+    #botaoContatos {
+        padding: 6px 6px;
+        width: 76px;
+        height: auto;
+    }
+
+    #apresentacao {
+        width: 100%;
+        /* padding: 0 0px 0 17px; */
+    }
+
+    #apresentacaoNome {
+        font-size: 27px;
+        padding-bottom: 6px;
+        user-select: none;
+        width: 100vw;
+    }
+
+    #apresentacao p {
+        font-size: 17px;
+    }
+
+    #cargo {
+        padding: 25% 0 10% 2%;
+    }
+
+    #botaoProjetos {
+        background-color: #db0404;
+        box-shadow: 1px 1px 10px 5px #ff0303;
+        padding: 12px 22px;
+        font-size: 14px;
+        border-radius: 18px;
+        width: 100px;
+        height: 43px;
+    } 
+    
+    #botaoContatos2 {
+        background-color: #02c908;
+        box-shadow: 1px 1px 10px 5px #02c908;
+        padding: 12px 22px;
+        font-size: 14px;
+        border-radius: 18px;
+        width: 100px;
+        height: 43px;
+    }
+
+    #botaoProjetos:hover, #botaoContatos2:hover {
+        width: 105px;
+        height: 48px;
+    }
+
+    #botoes {
+        display: inline-block;
+       
+    }
+
+
+    #sobreMim {
+        padding: 0;
+        padding-bottom: 30px;
+        background-image: url(./imagens/galaxy-night-landscape\ -\ cópia.png);
+        background-size: cover;
+    }
+
+    .conteudoAdicional h2 {
+        font-size: 21px;
+    }
+
+    #conteudoDividido {
+        gap: 1rem;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #perfil img {
+        width: 267px;
+    }
+
+    .linguagens {
+        width: 80px;
+        padding: 0 10px;
+    }
+
+    .imagemChaves .chaves {
+        display: none;
+    }
+
+    #habilidades {
+        padding: 8% 0 8% 0;
+    }
+
+    #projetos ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    #projetos li {
+        list-style-type: none;
+        padding-top: 40px;
+        width: 94vw;
+    }
+
+    .projetosRealizados {
+        width: 390px;
+        height: 440px;
+        box-shadow: inset 0 0 3em #00f3ff, 0 0 3em #04e2f9;
+
+    }
+
+    #contato {
+        padding: 60px 0 0 0;
+    }
+
+    #conteudoBlur {
+        padding: 0;
+    }
+
+    #contato ul {
+        padding: 0px 50px;
+    }
+    
+    #contato li {
+        margin-top: 30px;
+    }
+
+    #contatoTelegran {
+        margin-bottom: 30px;
+    }
+
+    .projetosRealizados:hover {
+        transform: none;
+    }
+
+    #abertura, #abertura1 {
+        font-size: 280px;
+    }
+
+    
+      
+}
