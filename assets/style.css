@@ -206,11 +206,12 @@ a {
 
 
 #apresentacaoNome {
-    font-size: 56px;
+    font-size: 53px;
     padding-bottom: 10px;
     user-select: none;
     color: white;
     width: 580px;
+    letter-spacing: 2px;
 }
 
 #apresentacao p {
