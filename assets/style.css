@@ -123,20 +123,36 @@ body {
 }
 
 .inicio {
-    display: inline-block;
-    
-    
-}
-
-.inicio:hover  {
-    height: 25.5px;
-    transition: 1s ease-out;
-    font-size: 20px;
+    display: inline-block; 
 }
 
 a {
-   color: white;
-   text-decoration: none;
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.inicio a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    top: 18px;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 20px;
+}
+  
+.inicio a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 #botaoContatos {
@@ -155,13 +171,10 @@ a {
     border-left-color: #00f3ff;
     border-top-color: #00f3ff;
     box-shadow: inset 0 0 3em #00f3ff, 0 0 0 #01ffe7;
+    cursor: pointer;
 }
     
-    
-
 #botaoContatos:hover {
-    width: 115px;
-    height: 40px;
     box-shadow: inset 0 0 3em #00f3ff, 0 0 3em #04e2f9;
 }
 
@@ -188,22 +201,16 @@ a {
    
 }
 
-
-
-
 #apresentacao {
     display: flex;
     flex-direction: column;
     width: 60%;
     justify-content: center;
-   
-    
 }
 
 #botoes {
     display: flex;
 }
-
 
 #apresentacaoNome {
     font-size: 53px;
@@ -227,34 +234,23 @@ a {
     border-radius: 25px;
     color: white; 
     width: 165px;
-    height: 51px;
-
-  
+    height: 51px; 
 }
 
 #botaoContatos2 {
-    border: 2px solid #00fe08;
-    
+    border: 2px solid #00fe08;  
+    cursor: pointer; 
 }
 
 #botaoProjetos {
     border: 2px solid #f00;
     margin-right: 30px;
+    cursor: pointer;
 }
-
-#botaoProjetos:hover, #botaoContatos2:hover {
-    color: white;
-    width: 175px;
-    height: 56px;
-    transition: width 1s, height 1s;
-    
-}
-
 
 #botaoProjetos:hover {
     background-color: #db0404;
     box-shadow: 1px 1px 10px 5px #ff0303;
-
 }
 
 #botaoContatos2:hover {
@@ -266,9 +262,7 @@ a {
     width: 330px;
 }
 
-
 /*sobre mim */
-
 
 .conteudo {
     width: 100%;
@@ -291,9 +285,7 @@ a {
 }
 
 #infoSobreMim {
-    width: 263px;
-    
-    
+    width: 263px; 
 }
 
 .conteudoAdicional h2 {
@@ -311,19 +303,20 @@ a {
 
 .imagemChaves {
     text-align: center;
+    display: flex;
 }
 
-#tecnologias {
-    text-align: center;
-    display: inline-block;
-    vertical-align: middle;
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    width: 626px;
+    gap: 1.15rem;
 }
 
 .chaves {
-    height: 202px;
+    height: 230px;
     width: 139px;
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
 }
 
 #habilidades {
@@ -331,13 +324,10 @@ a {
     padding: 8% 0 3% 0;
     /* background-color: #c84a4a;
     background-color: #9fec99d1; */
-
- 
 }
 
 .linguagens {
-    width: 100px;
-    padding: 0 5px;
+    width: 89px;
     transition: 0.5s all;
 }
 .linguagens:hover {
@@ -641,16 +631,10 @@ animation: blink .7s infinite;
         height: 43px;
     }
 
-    #botaoProjetos:hover, #botaoContatos2:hover {
-        width: 105px;
-        height: 48px;
-    }
-
     #botoes {
         display: inline-block;
        
     }
-
 
     #sobreMim {
         padding: 0;
